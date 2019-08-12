@@ -1,0 +1,17 @@
+atlanta:
+  miami: 715
+boston:
+  chicago: 701
+  philadelphia: 711
+chicago:
+  boston: 702
+  miami: 708
+miami:
+  philadelphia: 718
+philadelphia:
+  atlanta: 713
+  boston: 712
+  chicago: 705
+  miami: 717
+
+

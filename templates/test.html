@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>This is first web</title>
+</head>
+<body>
+    <h1> Hello</h1>
+    <form method ='post' action="{%url 'home'%}">
+        {% csrf_token %}
+        {% for book in books %}
+            <p> {{book.title}} {{book.pages}} </p>
+        {% endfor %}
+            <input type="text" name="title" >
+            <input type="number" name="pages">
+            <button type='submit'>Addbook</button>
+    </form>
+
+</body>
+</html>

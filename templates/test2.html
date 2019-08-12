@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> My first web page</title>
+</head>
+
+<body>
+    <form method ='post' action="{%url 'home'%}">
+        {% csrf_token %}
+        {% for tut in tutorials %}
+        <p>{{tut.tutorial_title}}</p>
+        <p>{{tut.tutorial_content|safe}}</p>
+        {% endfor %}
+             <input name='tutorial_title'>
+            <input name='tutorial_content'>
+            <button type = 'submit'>Addtut</button>
+    </form>
+
+
+
+   <img src="http://www.htmldog.com/badge1.gif" width="120" height="90" alt="HTML Dog">
+
+</body>
+</html>
+ <input name='title'>
+            <input name='pages' type='number'>
+            <button type = 'submit'>Addbook</button>
